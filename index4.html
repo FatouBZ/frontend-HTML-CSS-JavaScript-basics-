@@ -5,8 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <style>
+        body{
+            background-color: rgb(227, 240, 244);
+        }
+        form{
+            background-color: white;
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border: 1px solid rgb(235, 233, 233);
+                }
+        #logo{
+            background-color:rgb(227, 240, 244);
+            width: 100%;
+            padding: 20px;
+        }
+        span{
+            padding: 20px;
+        }
+        .logo-image{
+            width: 40px;
+        }
+        .input{
+            padding: 20px;
+        }
+        .input-item{
+            border: 0;
+            border-bottom:1px solid lightgray;
+            padding: 16px;
+            width: 80%;
+        }
+        #submit{
+            border: none;
+            background-color: blue;
+            padding: 15px;
+            color: white;
+            width: 100px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+    </style>
 </head>
-<body>
-    
+<body >
+    <form >
+        <h1>Register</h1>
+        <div id="logo">
+            <span> <a href="https://www.google.com"><img class="logo-image" src="images/google.png" alt="google logo"></a></span>
+            <span><a href="https://web.facebook.com/?_rdc=1&_rdr"><img  class="logo-image" src="images/facebook.png" alt=""></a></span>
+            <span> <a href="https://github.com"><img class="logo-image" src="images/github.png" alt="github"></a></span>
+            <span> <a href="https://www.linkedin.com"><img class="logo-image" src="images/linkedin.png" alt="linkdin"></a></span>
+        </div>
+
+        <div class="input">
+            <input class="input-item" type="text" name="Username" placeholder="Username">
+            
+        </div>
+        <div class="input">
+            <input class="input-item" type="email" name="email" placeholder="Email">
+            
+        </div>
+        <div class="input">
+            <input class="input-item" type="password" name="password" placeholder="Password">
+            
+        </div>
+        <div class="input">
+            <input class="input-item" type="password" name="password" placeholder="Confirm Password">
+            
+        </div>
+        <div  class="input">
+            <input  id ="submit" type="submit" name="submit" value="Register">
+        </div>
+    </form>
 </body>
 </html>
